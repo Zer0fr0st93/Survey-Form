@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="title">
+  Gaming and hours spent
+</h1>
+
+<p id="description"><i> What gamer are you ? </i></p>
+
+<form id="survey-form">
+  <div class="form-control">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required />
+  </div>
+  <div class="form-control">
+    <label for="email" id="email-label">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required />
+  </div>
+  <div class="form-control">
+    <label for="number" id="number-label">Age</label>
+    <input type="number" id="number" placeholder="Enter your age" required min="0" max="200" />
+  </div>
+  <div class="form-control">
+    <label for="gender">Which option best describes your current role?</label>
+    <select name="gender" id="dropdown">
+      <option value="student">Male</option>
+      <option value="full-time">Female</option>
+    </select>
+  </div>
+  <div class="form-control">
+    <label for="frequency">How often do you play online games within a week?</label>
+    <label for="frequency-1"><input type="radio" id="frequency-1" name="Daily" value="Daily" />Daily</label>
+    <label for="frequency-2"><input type="radio" id="frequency-2" name="Sometimes" value="Sometimes" />Sometimes (3-4 days per week)</label>
+    <label for="frequency-3"><input type="radio" id="frequency-3" name="Rarely" value="Rarely" />Rarely (1-2 days per week)</label>
+  </div>
+
+  <div class="form-control">
+    <label>What type of game genre do you prefer?
+      <small>(Check all that apply)</small>
+    </label>
+    <label for="type-1"><input type="checkbox" name="type" id="type-1" value="type-1" />Adventure </label>
+    <label for="type-2"><input type="checkbox" name="type" id="type-2" value="type-2" />RTS(Real Time Strategy)</label>
+    <label for="type-3"><input type="checkbox" name="type" id="type-3" value="type-3" />FPS(First Person Shooter)</label>
+    <label for="type-4"><input type="checkbox" name="type" id="type-4" value="type-4" />MMORPG(Massive Multiplayer Online Role-playing Game)</label>
+    <label for="type-5"><input type="checkbox" name="type" id="type-5" value="type-5" />Puzzle</label>
+    <label for="type-6"><input type="checkbox" name="type" id="type-6" value="type-6" />Sports</label>
+  </div>
+  <div class="form-control">
+    <label for="comments">What is the reason for someone to play video games in their free time?</label>
+    <textarea name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
+  </div>
+
+  <button type="submit" id="submit">Submit</button>
+</form>
+<div class="footer"> by <a href="https://codepen.io/zer0fr0st93/">zer0fr0st93</a></div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
